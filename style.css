@@ -12,7 +12,9 @@
 
 html{
     font-size: 50%;
+    scroll-behavior: smooth;
 }
+
 
 body{
     width: 100%;
@@ -99,7 +101,7 @@ nav a.active{
 
 section{
     min-height: 100vh;
-    padding: 5rem 9% 5rem;
+    padding: 12rem 9% 5rem;
 }
 
 .home{
@@ -289,5 +291,6 @@ span{
         transform: translate(-50%, -50%) scale(0);
     }
 }
+
 
 
