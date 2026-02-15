@@ -33,3 +33,22 @@ window.addEventListener("scroll", () =>{
         }
     });
 });
+
+async function getQuote() {
+    try {
+        const response = await fetch("https://api.adviceslip.com/advice");
+        const data = await response.json();
+
+        document.getElementById("quote-text").textContent =
+            `"${data.slip.advice}"`;
+        document.getElementById("quote-author").textContent = "";
+    } catch (error) {
+        document.getElementById("quote-text").textContent =
+            "Failed to load quote.";
+        console.error(error);
+    }
+}
+
+getQuote();
+
+document.getElementById("new-quote").addEventListener("click", getQuote);
