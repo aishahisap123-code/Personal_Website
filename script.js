@@ -11,7 +11,7 @@ document.addEventListener("mousemove", function(e) {
     }, 500);
 });
 
-let sections = document.querySelectorAll("sections");
+let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
 window.addEventListener("scroll", () =>{
